@@ -1,0 +1,73 @@
+@body-bg: @gray-lighter;
+
+@colorPercent: 20%;
+// Colores Base
+	@colorRojo: rgb(232, 72, 87);
+	@colorAmarillo: rgb(240, 211, 74);
+	@colorAzul: rgb(87, 64, 165);
+	@colorGreen: rgb(86, 200, 62);
+
+// Colores Oscuros
+	@colorRojoDark: darken(@colorRojo, @colorPercent);
+	@colorAmarilloDark: darken(@colorAmarillo, @colorPercent);
+	@colorAzulDark: darken(@colorAzul, @colorPercent);
+	@colorGreenDark: darken(@colorGreen, @colorPercent);
+
+// Colores claros
+	@colorRojoLight: lighten(@colorRojo, @colorPercent);
+	@colorAmarilloLight: lighten(@colorAmarillo, @colorPercent);
+	@colorAzulLight: lighten(@colorAzul, @colorPercent);
+	@colorGreenLight: lighten(@colorGreen, @colorPercent);
+
+//@import url(http://fonts.googleapis.com/css?family=Lobster);
+//@import url(http://fonts.googleapis.com/css?family=Pacifico);
+//@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+//@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+//@import url(http://fonts.googleapis.com/css?family=Maven+Pro);
+body{
+	height: 100%;
+	min-height: 100%;
+	min-width: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: @gray-darker;
+}
+
+.FontOswald{
+	font-family: 'Oswald', sans-serif;
+}
+.FontRaleway{
+	font-family: 'Raleway', sans-serif;
+}
+.TxtColorBlanco{
+	color: @gray-lighter;
+}
+.TxtColorBlanco{
+	color: @gray-lighter;
+}
+.sectionText{
+	text-shadow: 2px 2px 3px @gray-darker;
+}
+.descripcion{
+	margin-top: 25px;
+	font-size: 20px;
+	font-weight: 700;
+	text-shadow: 2px 2px 3px @gray-darker;
+}
+.bgTrWhite{
+	background: rgba(255, 255, 255, 0.7);
+}
+.bgTrGray{
+	background: rgba(0, 0, 0, 0.2);
+}
+.bgTrGrayDark{
+	background: rgba(0, 0, 0, 0.7);
+}
+.contactError{
+	&::before{
+		content:'* ';
+	}
+	color: red !important;
+}

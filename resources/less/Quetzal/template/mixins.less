@@ -1,0 +1,30 @@
+#item{
+	.round(@radius:5px){
+	  border-radius: @radius;
+	  -moz-border-radius: @radius;
+	  -webkit-border-radius: @radius;
+	}
+	.resize(@item, @width:auto, @top:auto, @bottom:auto, @left:auto, @right:auto){
+		img#@{item}{
+			top: @top;
+			left: @left;
+			bottom: @bottom;
+			right: @right;
+			width: @width;
+		}
+	}
+}
+.background(@image){
+	background-image: @image;
+	background-position: left top;
+	background-repeat: no-repeat;
+	&:hover{background-position: left bottom;}
+}
+.shadow(@option){
+  -webkit-box-shadow: @option;
+  -moz-box-shadow: @option;
+}
+.link-hover-color{
+	color: @hover-color;
+}
+.test(@color:RED){border: 1px solid @color;}

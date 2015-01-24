@@ -1,0 +1,157 @@
+[class*='btn-yellow'],[class*='btn-orange']{
+	color: @gray-dark !important;
+}	
+.SiteInfoContainer{
+	position: absolute;
+	z-index: 3;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	a{
+		text-decoration: none !important;
+	}
+	.postContent{
+		font-size: 14px !important;
+	}
+	.container{
+		margin-top: 170px !important;
+		margin-bottom: 100px;
+		// general styles
+			>.row{
+			}
+			.SectionFooter{
+				margin: 10px auto;
+				max-width: 600px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			article{
+				h1{
+					padding-left: 90px;
+					text-transform: uppercase;
+					text-shadow: 2px 2px 3px @gray-darker;
+					min-height: 78px;
+					vertical-align: middle;
+				}
+			}
+		// imagen de post
+			.postImage{
+				img{
+					margin: 0px auto;
+					.box-shadow(5px 5px 20px @gray-darker);
+					border: 5px solid @gray-darker;
+				}
+			}
+		// inicio
+			.homeSection{
+				h1{
+					border-left: 5px solid @colorRojo;
+					background: url(../imagen/theme-cavern/menu/btn-01.png) 10px center no-repeat;
+				}
+				background: rgba(0, 0, 0, 0.2);
+			}
+		// Trabajos
+			.workArticle{
+				h1{
+					border-left: 5px solid @colorAmarillo;
+					background: url(../imagen/theme-cavern/menu/btn-02.png) 10px center no-repeat;
+				}
+				background: rgba(0, 0, 0, 0.2);
+				.articleImage{
+					margin-top: 15px;
+					margin-bottom: 15px;
+					img{
+						margin: 0px auto;
+					}
+				}
+				.articleInfo{
+					margin-top: 15px;
+					margin-bottom: 15px;
+					padding:10px;
+					background: rgba(0, 0, 0, 0.7);
+					.border-radius(5px);
+				}
+			}
+			.workSection{
+				h1{
+					border-left: 5px solid @colorAmarillo;
+					background: url(../imagen/theme-cavern/menu/btn-02.png) 10px center no-repeat;
+				}
+				background: rgba(0, 0, 0, 0.2);
+			}
+			.worksContainer{
+				#workGallery{
+					padding: 0px 0px;
+					.Thumbnail {
+						margin-bottom: 15px;
+						.mask{
+							.btnPurple{
+								display: none;
+							}
+						}
+					}
+					.right{
+						right: -90px;
+					}
+				}
+			}
+		// Acerca de
+			.aboutProfiles{
+				background: rgba(0, 0, 0, 0.2);
+				margin-left: 10px;
+				.border-radius(5px);
+				img{
+					display: block;
+					max-height: 220px;
+					max-width: 220px;
+					border: 5px solid @gray-lighter;
+					margin:0px auto;
+					.border-radius(500px);
+					.box-shadow(5px 5px 15px @gray-darker);
+				}
+				p{
+					margin-top: 10px;
+					padding: 5px;
+				}
+			}
+		// perfil de usuario
+			.userProfile, .aboutSection{
+				background: rgba(0, 0, 0, 0.2);
+				h1{
+					border-left: 5px solid @colorAzul;
+					background: url(../imagen/theme-cavern/menu/btn-05.png) 10px center no-repeat;
+				}
+				h2{
+					border-left: 5px solid @colorAzul;
+					padding: 10px;
+					background: rgba(0, 0, 0, 0.2);
+				}
+				.personalInfo{
+					padding: 10px;
+					background: rgba(0, 0, 0, 0.7);
+				}
+				.profileImage{
+					max-height: 200px;
+				}
+				.listaConocimientos{
+					padding: 10px;
+					background: rgba(255, 255, 255, 0.7);
+					li{
+						margin-bottom: 10px;
+						margin-roght: 10px;
+					}
+				}
+				.panel-default{
+					background: rgba(255, 255, 255, 0.5);
+					.border-radius(0px);
+					.panel-heading{
+						background: rgba(255, 255, 255, 0.7);
+						*{
+							text-shadow: 2px 2px 3px @gray-lighter;
+						}
+					}
+				}
+			}
+	}
+}

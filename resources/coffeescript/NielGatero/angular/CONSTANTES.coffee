@@ -1,0 +1,1 @@
+HOST= window.location.host

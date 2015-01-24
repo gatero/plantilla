@@ -1,0 +1,26 @@
+// variables
+// Default 15
+@modal-inner-padding: 5px;
+// Default 20
+@modal-title-padding: 7px;
+
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+  padding: @modal-title-padding (@modal-title-padding + 5);
+  text-shadow: 1px 1px 1px @gray-dark;
+}
+// Close icon
+.modal-header .close {
+  margin-top: 2px;
+}
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+  padding: (@modal-inner-padding + 10);
+}
+// Footer (for actions)
+.modal-footer {
+  padding: 0px;
+  #gradient > .vertical(#fcfcfc, #c4c4c4);
+}

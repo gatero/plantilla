@@ -1,0 +1,48 @@
+
+// Wrapper and base class
+//
+// Provide a static navbar from which we expand to create full-width, fixed, and
+// other navbar variations.
+
+  .navbar {
+    @navbar-height: 57px;
+    min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+    #item > .round(0px);
+    .box-shadow(0px 2px 2px rgba(91, 112, 124, .8));
+  }
+
+  // Brand/project name
+  .navbar-brand {
+    @navbar-padding-vertical:5px; 
+    @navbar-padding-horizontal:5px;
+    padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  }
+
+// Navbar nav links
+//
+// Builds on top of the `.nav` components with its own modifier class to make
+// the nav the full height of the horizontal nav (above 768px).
+
+  .navbar-nav {
+    > li > a {
+      padding:18px 15px;
+    }
+  }
+
+// Navbar form
+//
+// Extension of the `.form-inline` with some extra flavor for optimum display in
+// our navbars.
+
+  .navbar-form {
+    margin-top: 13x;
+    .form-control{
+      margin-right: -5px;
+      #item > .round(0px);
+    };
+
+    // Undo 100% width for pull classes
+    @media (min-width: @grid-float-breakpoint) {
+      margin-top: 13px;
+    }
+  }

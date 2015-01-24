@@ -1,0 +1,41 @@
+// @import 'jp-animate';
+.holder{
+	margin:15px 0;
+	a{
+		cursor:pointer;
+		padding:5px 10px;
+		margin:0px 2px;
+		font-size:12px;
+		color:#FFF;
+		border:1px solid #ccc;
+		//.item > .round();
+		background:#555;
+	}
+	a:hover{
+		text-decoration:none;
+		background-color:#555;
+		color:#FFF;
+	}
+	a.jp-previous{
+		margin-right:5px;
+	}
+	a.jp-next{margin-left:5px;}
+	a.jp-current, a.jp-current:hover{ 
+		color:#FF4242;
+		font-weight: bold;
+	}
+	a.jp-disabled, a.jp-disabled:hover{
+		color:#bbb;
+	}
+	a.jp-current, a.jp-current:hover{
+		cursor:default; 
+		background:#777;
+		color:#FFF;
+	}
+	a.jp-disabled, a.jp-disabled:hover{
+		cursor:default; 
+		background:#555;
+		color:#FFF;
+	}
+	span {margin:0px 5px;}
+}

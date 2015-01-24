@@ -1,0 +1,38 @@
+@import 'general';
+.Q-Rollover.effect-01{
+	// Initial
+		img{.transition(all 200ms linear);}
+		.mask{
+			.transition(all 400ms ease-in-out);
+		}
+		h4{
+			.translateY(-100px);
+			.transition(all 200ms ease-in-out);
+		}
+		p{
+			.translateY(100px);
+			.transition(all 200ms ease-in-out);
+		}
+		a.trigger{
+			.transition(all 200ms ease-in-out);
+		}
+	// animacion
+		&:hover img{
+			.scale(1.1, 1.1);
+		}
+		&:hover .mask{
+			.opacity(1);
+		}
+		&:hover h4,
+		&:hover p,
+		&:hover a.trigger{
+			.opacity(1);
+			.translateY(0px);
+		}
+		&:hover p{
+			.transition-delay(100ms);
+		}
+		&:hover a.trigger{
+			.transition-delay(200ms);
+		}
+}

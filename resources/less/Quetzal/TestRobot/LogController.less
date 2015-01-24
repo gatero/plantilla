@@ -1,0 +1,38 @@
+.test(@color:RED){border: 1px solid @color;}
+.LogMessagesContainer{
+	@errorMessageBg: @gray-darker;
+	position: fixed;
+	z-index: 99;
+	top: auto;
+	left: 0px;
+	bottom: 0px;
+	right: auto;
+	padding: 10px 30px;
+	background: fade(@errorMessageBg, 80%);
+	h3{
+		text-align: center;
+		margin: 0px;
+		padding: 5px 0px 10px;
+		color: @gray-lighter;
+	}
+	ul{
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+		li{color: @gray-lighter;}
+		.errorMenssageExito{
+			&::before{
+				content: "Éxito: ";
+				font-weight: 600;
+				color: @brand-success;
+			}
+		}
+		.errorMenssageFallo{
+			&::before{
+				content: "Falló: ";
+				font-weight: 600;
+				color: @brand-danger;
+			}
+		}
+	}
+}

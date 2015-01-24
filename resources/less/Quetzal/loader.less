@@ -1,0 +1,30 @@
+// ------------------------------- loader
+	.ng-loader-in{overflow: hidden !important;}
+	.load-content{display: none;}
+	#ng-loader{
+		position: fixed;
+		z-index: 99999999999999999999999999;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		background: @gray-darker;
+		>#loader-centerbox{
+			position: absolute;
+			z-index: 1002;
+			top: 50%;
+			left: 50%;
+			margin-left: -59px;
+			margin-top: -59px;
+			div{
+				min-width: 150px;
+				margin-top: 5px;
+				font-size: 11px;
+				text-align: right;
+				color: @gray-lighter;
+				a{
+					color: @brand-info;
+				}
+			}
+		}
+	}

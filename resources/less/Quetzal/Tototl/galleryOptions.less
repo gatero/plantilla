@@ -1,0 +1,33 @@
+.tototl.galleryOptions{
+	bottom: 5px;
+	right: 0px;
+	text-align: center;
+	border: none;
+	padding: 5px;
+	background: fade(@tototl-color-blue-4, 70%) !important;
+	.border-left-radius(5px);
+	a{
+		padding: 5px 10px !important;
+		border-radius: 3px !important;
+		background: fade(@tototl-color-blue-0, 40%) !important;
+		border: 2px solid @tototl-color-blue-1 !important;
+		.transition(all 500ms ease);
+	}
+	.active > a, a:hover{
+		background: fade(@tototl-color-blue-4, 90%) !important;
+		border: 2px solid lighten(@tototl-color-blue-1, 50%) !important;
+		i{
+			color: lighten(@tototl-color-blue-1, 50%) !important;
+		}
+	}
+}
+.tototlActiveBtn{
+		background: fade(@tototl-color-blue-4, 90%) !important;
+		border: 2px solid lighten(@tototl-color-blue-1, 50%) !important;
+		i{
+			color: lighten(@tototl-color-blue-1, 50%) !important;
+		}
+}
+.tototl.galleryOptionsAnimation{
+	right: -323px;
+}

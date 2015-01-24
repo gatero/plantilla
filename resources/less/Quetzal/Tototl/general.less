@@ -1,0 +1,25 @@
+.tototl{
+	&,*{color: @tototl-color-blue-1;}
+}
+.no-scroll{
+	overflow: hidden !important;
+}
+.tototl.ui{
+	position: fixed;
+	display: none;
+	background: fade(@tototl-color-blue-4, 70%);
+	z-index: @tototl-ui-zIndex !important;
+	.transition(all 500ms ease-in-out);
+}
+.tototl.background{
+	z-index: @tototl-bg-zIndex !important;
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	min-width: 100%;
+	top: 0px;
+	left: 0px;
+}
+.tototl.menu-top{
+	border: none;
+}
